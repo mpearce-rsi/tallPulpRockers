@@ -6,8 +6,8 @@ body {
     background-color: #ededf5;
   }
   span.poses, p {
-    float: right;
-    text-align: right;
+    float: left;
+    text-align: left;
     margin: 0px 25px 0px;
     color: #f3f3f7;
     font: 26px "Fira Sans", serif;
