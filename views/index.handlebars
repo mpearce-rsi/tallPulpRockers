@@ -1,38 +1,77 @@
-<h1>Cats!</h1>
-
-<h2>Cats that are not sleepy!</h2>
-
-<ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Cats that are sleepy!</h2>
-
-<ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Cat</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Cat Name:</label>
-    <input type="text" id="ca" name="name">
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container" style="text-align:center;">
+    Yo your Yoga
   </div>
+</nav>
 
-  <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
+<div class="jumbotron" style="height: 50vh;">
+  <div class="container"
+    style=" background-color:aquamarine; width:50vw; height:40vh; display:flex; justify-content:center">
+    this is where the image will be at
   </div>
+</div>
 
-  <button type="submit">Add Cat</button>
-</form>
+<nav class="navbar navbar-light bg-light" style="float: left;">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+
+<div class="btn-group" style="float:initial;">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false">
+    Action
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+
+<div class="btn-group" style="float:left;">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false">
+    Action
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+
+<div class="btn-group" style="float:left;">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false">
+    Action
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+
+<button type="button" class="btn btn-secondary" style="justify-content:center;">Secondary</button>
+
+<div class="jumbotron" style="height: 40vh; width: 40px">
+  <div class="container"
+    style=" background-color:aquamarine; width:50vw; height:40vh; display:flex; justify-content:center">
+    this is where the image will be at
+  </div>
+</div>
+
+<div class="jumbotron" style="height: 40vh; width:40px">
+  <div class="container"
+    style=" background-color:aquamarine; width:50vw; height:40vh; display:flex; justify-content:center">
+    this is where the image will be at
+  </div>
+</div>
