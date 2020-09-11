@@ -3,7 +3,7 @@ var mysqlConnection = mysql.createConnection({
   host: 'localhost',
   port: 3306,
   user: 'root',
-  password: 'we4allah',
+  password: '$0ftC0rnHu$k!',
   database: 'asana_db',
 });
 
