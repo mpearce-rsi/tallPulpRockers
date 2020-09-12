@@ -32,6 +32,7 @@ app.set('view engine', 'handlebars');
 const routes = require('./controllers/pose_controller.js');
 // require('./routes/html-routes.js')(app);
 require('./routes/api-routes.js')(app);
+require("./routes/html-routes.js")(app);
 // app.use(routes);
 
 // Start our server so that it can begin listening to client requests.
