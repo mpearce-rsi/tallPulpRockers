@@ -51,7 +51,7 @@ module.exports = function (sequelize, DataTypes) {
     alt_name: {
       type: DataTypes.STRING,
     },
-    image: {
+    url: {
       type: DataTypes.STRING,
     },
   });
