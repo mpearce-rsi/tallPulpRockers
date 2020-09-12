@@ -1,6 +1,8 @@
-const db = require("../models");
+const db = require('../models');
+const express = require('express');
+const app = express();
 
-app.get("/poses/:id", function (req, res) {
+app.get('/poses/:id', function (req, res) {
   db.Pose.findOne({
     where: {
       id: req.params.id,
@@ -38,10 +40,10 @@ app.get("/poses/:id", function (req, res) {
       description: descArr,
       benefits: pose.benefits,
       altName: pose.alt_name,
-      imgURL: pose.image
+      imgURL: pose.image,
     };
-    res.render("pose", data);
+    res.render('pose', data);
   });
 });
 
-app.get("/search")
+app.get('/search');
