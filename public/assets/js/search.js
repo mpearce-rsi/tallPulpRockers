@@ -1,7 +1,7 @@
 //get to api/search route
 //submitting search fields as an object
 //use a get in the controller to submit the query using json from api/search route
-const orm = require("../config/orm.js");
+const orm = require("../../../config/passport");
 const posture = {
   all: function(cb) {
     orm.all("poses", function(res) {
