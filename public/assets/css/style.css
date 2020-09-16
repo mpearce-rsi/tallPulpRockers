@@ -5,3 +5,13 @@ form.login {
 body{
   background-color: aqua;
 }
+
+#maincontainer {
+  background-image: url(../img/backgroundimg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  opacity: .5;
+  width:100%;
+  height:100%;
+}

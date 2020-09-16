@@ -1,16 +1,16 @@
 <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/logout"> Logout </a>
-        </div>
-      </div>
-    </nav>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/logout"> Logout </a>
+    </div>
+  </div>
+</nav>
 
 
-<div class="jumbotron" style="height: 50vh;">
-  <div class="container"
-    style=" background-color:aquamarine; width:50vw; height:40vh; display:flex; justify-content:center">
-    this is where the image will be at
+<div class="jumbotron text-center bg-danger" style="height: 50vh;">
+  <div id="maincontainer" class="container">
+
+    <h1> yo yoga </h1>
   </div>
 </div>
 
@@ -27,7 +27,7 @@
     Action
   </button>
   <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Action</a> 
+    <a class="dropdown-item" href="#">Action</a>
     <a class="dropdown-item" href="#">Another action</a>
     <a class="dropdown-item" href="#">Something else here</a>
     <div class="dropdown-divider"></div>
@@ -68,11 +68,24 @@
 <br><br><br><br><br><br><br><br><br>
 
 <div class="container">
-  <div class="row justify-content-start">
-    <div class="col-md-6" style="border: 2px solid black; height: 400px; margin: 10px, 50px, 10px, 10px; column-gap: 40px">
-      BOX 1 AT BOTTOM
+  <div class="row">
+    <div class="col-md-6 container">
+      <div class="row" style="border: 2px solid black; height: 400px;">
+        BOX 1 AT BOTTOM
+        {{#each records}}
+        <li>{{this.pose_name}}</li>
+        {{/each}}
+        <img src={{imgsrc}} height=200 width=200 />
+      </div>
+
     </div>
-    <div class="col-md-6" style="border: 2px solid black; height: 400px; margin: 10px, 10px, 10px, 50px; column-gap: 40px">
-      BOX 2 AT BOTTOM
+    <div class="col-md-6 container">
+      <div style="border: 2px solid black; height: 400px; ">
+        BOX 2 AT BOTTOM </div>
     </div>
   </div>
+</div>
+
+</div>
+
+</div>
