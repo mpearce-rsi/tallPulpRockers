@@ -4,12 +4,15 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       autoIncrement: true,
       allowNull: false,
-      primaryKey: true
+      primaryKey: true,
     },
     pose_name: {
       type: DataTypes.STRING,
     },
     sanskrit_name: {
+      type: DataTypes.STRING,
+    },
+    url: {
       type: DataTypes.STRING,
     },
     translation_0: {
@@ -24,15 +27,6 @@ module.exports = function (sequelize, DataTypes) {
     translation_3: {
       type: DataTypes.STRING,
     },
-    translation_4: {
-      type: DataTypes.STRING,
-    },
-    translation_5: {
-      type: DataTypes.STRING,
-    },
-    translation_6: {
-      type: DataTypes.STRING,
-    },
     category: {
       type: DataTypes.STRING,
     },
@@ -40,6 +34,9 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
     },
     description_0: {
+      type: DataTypes.STRING,
+    },
+    description_1: {
       type: DataTypes.STRING,
     },
     description_2: {
@@ -51,7 +48,19 @@ module.exports = function (sequelize, DataTypes) {
     alt_name: {
       type: DataTypes.STRING,
     },
-    url: {
+    translation_4: {
+      type: DataTypes.STRING,
+    },
+    translation_5: {
+      type: DataTypes.STRING,
+    },
+    translation_6: {
+      type: DataTypes.STRING,
+    },
+    description_3: {
+      type: DataTypes.STRING,
+    },
+    description_4: {
       type: DataTypes.STRING,
     },
   });

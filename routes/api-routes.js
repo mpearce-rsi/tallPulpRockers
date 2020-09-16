@@ -1,6 +1,7 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
+const { like } = require("sequelize/types/lib/operators");
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -46,4 +47,16 @@ module.exports = function(app) {
       });
     }
   });
+
+  app.get("/api/search?", function(req, res){
+    console.log("oranges", req.query)
+    db.Pose.findAll({
+      where: {
+        pose_name: {[like]:"%" + req.query.keyword + "%"},
+        difficulty: req.query.difficulty
+      }
+    }).then((results) => {
+      res.render('search', {pose: results})
+    })
+  })
 };
