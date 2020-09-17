@@ -72,10 +72,21 @@
     <div class="col-md-6 container">
       <div class="row" style="border: 2px solid black; height: 400px;">
         BOX 1 AT BOTTOM
-        {{#each records}}
-        <li>{{this.pose_name}}</li>
+        <div>
+        {{#each data}}
+        <li>{{this.engName}}</li>
+        <li>{{this.sanName}}</li>
+        <li>{{this.category}}</li>
+        <li>{{this.translation}}</li>
+        <li>{{this.difficulty}}</li>
+        <li>{{this.description}}</li>
+        <li>{{this.benefits}}</li>
+        <li>{{this.altName}}</li>
+        <li>{{this.imgURL}}</li>
+        </div>
+        <img src={{this.imgURL}} height=200 width=200 />
         {{/each}}
-        <img src={{imgsrc}} height=200 width=200 />
+
       </div>
 
     </div>

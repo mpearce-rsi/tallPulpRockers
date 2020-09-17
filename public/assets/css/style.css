@@ -3,7 +3,8 @@ form.login {
   margin-top: 50px;
 }
 body{
-  background-color: aqua;
+  background-color: grey;
+  color: white;
 }
 
 #maincontainer {

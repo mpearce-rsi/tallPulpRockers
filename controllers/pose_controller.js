@@ -53,3 +53,14 @@ app.get('/search', function() {
 app.get('/members', function(){
   res.render("members")
 })
+
+
+// app.get("/api/getyoga:",function(req,res){
+//   db.yoga.findAll({})
+//   .then(function(records){
+   
+//       res.render("index",{data:records})
+//     })
+
+//   })
+// })
