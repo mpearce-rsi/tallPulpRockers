@@ -1,11 +1,11 @@
 module.exports = function (sequelize, DataTypes) {
   const Pose = sequelize.define("Pose", {
-    id: {
-      type: DataTypes.INTEGER,
-      autoIncrement: true,
-      allowNull: false,
-      primaryKey: true,
-    },
+    // id: {
+    //   type: DataTypes.INTEGER,
+    //   autoIncrement: true,
+    //   allowNull: false,
+    //   primaryKey: true,
+    // },
     pose_name: {
       type: DataTypes.STRING,
     },
@@ -33,13 +33,13 @@ module.exports = function (sequelize, DataTypes) {
     difficulty: {
       type: DataTypes.STRING,
     },
-    description_0: {
+    descriptions_0: {
       type: DataTypes.STRING,
     },
-    description_1: {
+    descriptions_1: {
       type: DataTypes.STRING,
     },
-    description_2: {
+    descriptions_2: {
       type: DataTypes.STRING,
     },
     benefits: {
@@ -57,10 +57,10 @@ module.exports = function (sequelize, DataTypes) {
     translation_6: {
       type: DataTypes.STRING,
     },
-    description_3: {
+    descriptions_3: {
       type: DataTypes.STRING,
     },
-    description_4: {
+    descriptions_4: {
       type: DataTypes.STRING,
     },
   });
