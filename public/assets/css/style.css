@@ -2,23 +2,17 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
-#page{
-  background-color: burlywood;
+body{
+  background-color: grey;
+  color: white;
 }
 
-h1{
-  font-size: medium;
-  text-align: center;
+#maincontainer {
+  background-image: url(../img/backgroundimg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  opacity: .5;
+  width:100%;
+  height:100%;
 }
-
-.button-group{
-  margin-left: auto;
-}
-
-.pic{
-  width: 100%;
-  height: 265px;
-  margin-top: -30px;
-}
-
-

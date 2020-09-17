@@ -1,0 +1,102 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/logout"> Logout </a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="jumbotron text-center bg-danger" style="height: 50vh;">
+  <div id="maincontainer" class="container">
+
+    <h1> yo yoga </h1>
+  </div>
+</div>
+
+<nav class="navbar navbar-light bg-light" style="float: left;">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+
+<div class="btn-group" style="float:initial;">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false">
+    Action
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+
+<div class="btn-group" style="float:left;">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false">
+    Action
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+
+<div class="btn-group" style="float:left;">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false">
+    Action
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+
+<button type="button" class="btn btn-secondary" style="justify-content:center;">Secondary</button>
+
+<br><br><br><br><br><br><br><br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 container">
+      <div class="row" style="border: 2px solid black; height: 400px;">
+        BOX 1 AT BOTTOM
+        <div>
+        {{#each data}}
+        <li>{{this.engName}}</li>
+        <li>{{this.sanName}}</li>
+        <li>{{this.category}}</li>
+        <li>{{this.translation}}</li>
+        <li>{{this.difficulty}}</li>
+        <li>{{this.description}}</li>
+        <li>{{this.benefits}}</li>
+        <li>{{this.altName}}</li>
+        <li>{{this.imgURL}}</li>
+        </div>
+        <img src={{this.imgURL}} height=200 width=200 />
+        {{/each}}
+
+      </div>
+
+    </div>
+    <div class="col-md-6 container">
+      <div style="border: 2px solid black; height: 400px; ">
+        BOX 2 AT BOTTOM </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div>
