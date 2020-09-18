@@ -46,14 +46,7 @@ app.get("/poses/:id", function (req, res) {
   });
 });
 
-// app.get("/search", function () {});
-
-app.get("/search", function(req, rest) {
-  db.Poses.findAll(function(posesData){
-    console.log(posesData);
-    res.render("index", posesData);
-  });
-});
+app.get("/search", function () {});
 
 app.get('/members', function(){
   res.render("members")

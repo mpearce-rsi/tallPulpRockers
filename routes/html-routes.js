@@ -11,8 +11,7 @@ module.exports = function (app) {
   app.get("/", function (req, res) {
     // If the user already has an account send them to the members page
     if (req.user) {
-      // res.redirect("/members");
-      res.redirect("/search");
+      res.redirect("/members");
     }
     res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
@@ -31,6 +30,11 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
 
+//   app.get("/search", function (req, res) {
+//     console.log("HTML get singup url ");
+//     //Render the index handle bar
+//     res.render("index.handlebars", posesData)
+// });
   app.get("/search", isAuthenticated, function (req, res) {
     res.sendFile(path.join(__dirname, "../public/testhtml.html"));
     res.render("index");
