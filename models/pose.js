@@ -34,16 +34,16 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
     },
     description_0: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(5000),
     },
     description_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(500),
     },
     description_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(1000),
     },
     benefits: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(5000),
     },
     alt_name: {
       type: DataTypes.STRING,
@@ -58,11 +58,13 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
     },
     description_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(500),
     },
     description_4: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(500),
     },
+  },{
+    timestamps: false,
   });
   return Pose;
 };

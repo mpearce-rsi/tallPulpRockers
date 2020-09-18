@@ -8,15 +8,26 @@ $("#searchBtn").on("click", function () {
     const diffs = [...$("#difChoices input:checked")];
     diffs.forEach((diff) => diffArr.push(diff.value));
     console.log(diffs);
-    let queryString = "?"
+    console.log(diffArr)
+    let queryString = "/api/search?";
+    // if keyword exists
     if (keyword !== "") {
         queryString += "keyword=" + keyword
     }
-    if (diffArr.length > 0 && queryString !== "?") {
-        diffArr.forEach(diff => queryString += "&difficulty=" + diff)
-    } else if (diffArr.length > 0) {
-        diffArr.forEach(diff => queryString += "difficulty=" + diff)
+    for (let i = 0; i < diffArr.length; i++) {
+        if(keyword === "" && i === 0) {
+            queryString += "difficulty=" + diffArr[i]
+        } else {
+            queryString += "&difficulty=" + diffArr[i]
+        }
+        
     }
-    fetch("/api/search" + queryString);
+    // if difficulty.length is more than 0, put & in front of each 
+    //if (keyword === "") {
+     //   diffArr.forEach(diff => queryString += "&difficulty=" + diff)
+    //} else {
+      //  diffArr.forEach(diff => queryString += "difficulty=" + diff)
+    //}
+    fetch(queryString);
     console.log(queryString);
   });
