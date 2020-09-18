@@ -1,8 +1,12 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
+<<<<<<< HEAD
 var Sequelize = require("sequelize");
 const Op = Sequelize.Op;
+=======
+// const { like } = require("sequelize/types/lib/operators");
+>>>>>>> 7b512872a48f50b9c7af7ce092ad9ece22a37681
 
 module.exports = function (app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -40,6 +44,7 @@ module.exports = function (app) {
       // The user is not logged in, send back an empty object
      
       res.json({});
+      console.log(req.user)
     } else {
       // Otherwise send back the user's email and id
       // Sending back a password, even a hashed password, isn't a good idea
@@ -50,17 +55,17 @@ module.exports = function (app) {
     }
   });
 
-  app.get("/api/search", function (req, res) {
-    console.log("oranges", req.query);
-    db.Poses.findAll({
-      where: {
-        pose_name: { [Op.like]: "%" + req.query.keyword + "%" },
-        difficulty: req.query.difficulty,
-      },
-    }).then((results) => {
-      console.log("HERE --> ", results);
-      res.render("search", { pose: results });
-      
-    });
-  });
+   app.get("/api/search?", function(req, res){
+     console.log("oranges", req.query)
+     db.Pose.findAll({
+       where: {
+  //       pose_name: {[like]:"%" + req.query.keyword + "%"},
+         difficulty: req.query.difficulty
+       }
+     }).then((results) => {
+       const dbPoses = results.map(pose => pose.dataValues);
+       console.log(dbPoses)
+       res.render('search', {pose: dbPoses})
+     })
+   })
 };
