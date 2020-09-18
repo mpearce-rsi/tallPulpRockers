@@ -1,7 +1,6 @@
 //get to api/search route
 //submitting search fields as an object
 //use a get in the controller to submit the query using json from api/search route
-<<<<<<< HEAD
 
 $("#searchBtn").on("click", function () {
   const keyword = $("#keyword").val();
@@ -55,7 +54,6 @@ $.ajax({
   "method" :"GET",
   url:"poses/:id'"
 })
-=======
 
 
 $("#searchBtn").on("click", function () {
@@ -110,4 +108,3 @@ $("#searchBtn").on("click", function () {
 // Export the database functions for the controller (Controller.js).
 //module.exports = posture;
 
->>>>>>> 7b512872a48f50b9c7af7ce092ad9ece22a37681

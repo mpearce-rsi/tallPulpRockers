@@ -4,10 +4,7 @@ const isAuthenticated = require("../config/middleware/isAuthenticated");
 // Routes
 // =============================================================
 module.exports = function (app) {
-<<<<<<< HEAD
-=======
 
->>>>>>> 7b512872a48f50b9c7af7ce092ad9ece22a37681
   // Each of the below routes just handles the HTML page that the user gets sent to.
 
   // index route loads view.html
