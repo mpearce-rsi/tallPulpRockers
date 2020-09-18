@@ -4,12 +4,15 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       autoIncrement: true,
       allowNull: false,
-      primaryKey: true
+      primaryKey: true,
     },
     pose_name: {
       type: DataTypes.STRING,
     },
     sanskrit_name: {
+      type: DataTypes.STRING,
+    },
+    url: {
       type: DataTypes.STRING,
     },
     translation_0: {
@@ -24,6 +27,27 @@ module.exports = function (sequelize, DataTypes) {
     translation_3: {
       type: DataTypes.STRING,
     },
+    category: {
+      type: DataTypes.STRING,
+    },
+    difficulty: {
+      type: DataTypes.STRING,
+    },
+    description_0: {
+      type: DataTypes.STRING(5000),
+    },
+    description_1: {
+      type: DataTypes.STRING(500),
+    },
+    description_2: {
+      type: DataTypes.STRING(1000),
+    },
+    benefits: {
+      type: DataTypes.STRING(5000),
+    },
+    alt_name: {
+      type: DataTypes.STRING,
+    },
     translation_4: {
       type: DataTypes.STRING,
     },
@@ -33,27 +57,14 @@ module.exports = function (sequelize, DataTypes) {
     translation_6: {
       type: DataTypes.STRING,
     },
-    category: {
-      type: DataTypes.STRING,
+    description_3: {
+      type: DataTypes.STRING(500),
     },
-    difficulty: {
-      type: DataTypes.STRING,
+    description_4: {
+      type: DataTypes.STRING(500),
     },
-    description_0: {
-      type: DataTypes.STRING,
-    },
-    description_2: {
-      type: DataTypes.STRING,
-    },
-    benefits: {
-      type: DataTypes.STRING,
-    },
-    alt_name: {
-      type: DataTypes.STRING,
-    },
-    url: {
-      type: DataTypes.STRING,
-    },
+  },{
+    timestamps: false,
   });
   return Pose;
 };

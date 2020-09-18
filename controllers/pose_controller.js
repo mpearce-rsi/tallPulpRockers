@@ -47,8 +47,9 @@ app.get('/poses/:id', function (req, res) {
 });
 
 app.get('/search', function() {
-  res.render('search')
 });
+
+
 
 app.get('/members', function(){
   res.render("members")
