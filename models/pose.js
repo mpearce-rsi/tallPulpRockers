@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-  const Pose = sequelize.define("Poses", {
+  const Pose = sequelize.define("Pose", {
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
