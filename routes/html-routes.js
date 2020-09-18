@@ -30,6 +30,7 @@ module.exports = function (app) {
   });
 
   app.get("/search", isAuthenticated, function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/testhtml.html"));
+    // res.sendFile(path.join(__dirname, "../public/testhtml.html"));
+    res.render("index");
   });
 };

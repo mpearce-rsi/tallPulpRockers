@@ -4,6 +4,7 @@
 
 $("#searchBtn").on("click", function () {
   const keyword = $("#keyword").val();
+  console.log("search button click on handlebars")
   const diffArr = [];
   const diffs = [...$("#difChoices input:checked")];
   diffs.forEach((diff) => diffArr.push(diff.value));
@@ -17,7 +18,13 @@ $("#searchBtn").on("click", function () {
   } else if (diffArr.length > 0) {
     diffArr.forEach((diff) => (queryString += "difficulty=" + diff));
   }
-  fetch("/api/search" + queryString);
+  $.ajax({
+    url: "/api/search" + queryString,
+    method: "GET",
+    // data: { activity: JSON.stringify(activity) },
+    // dataType: "json",
+})
+  
   console.log("QUERY STRING: ", queryString);
 });
 //const passport = require("../config/passport");

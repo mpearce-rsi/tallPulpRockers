@@ -50,9 +50,9 @@ module.exports = function (app) {
     }
   });
 
-  app.get("/api/search?", function (req, res) {
+  app.get("/api/search", function (req, res) {
     console.log("oranges", req.query);
-    db.Pose.findAll({
+    db.Poses.findAll({
       where: {
         pose_name: { [Op.like]: "%" + req.query.keyword + "%" },
         difficulty: req.query.difficulty,

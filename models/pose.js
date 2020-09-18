@@ -1,11 +1,11 @@
 module.exports = function (sequelize, DataTypes) {
-  const Pose = sequelize.define("Pose", {
-    // id: {
-    //   type: DataTypes.INTEGER,
-    //   autoIncrement: true,
-    //   allowNull: false,
-    //   primaryKey: true,
-    // },
+  const Pose = sequelize.define("Poses", {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      allowNull: false,
+      primaryKey: true,
+    },
     pose_name: {
       type: DataTypes.STRING,
     },

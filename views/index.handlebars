@@ -16,12 +16,12 @@
 
 <nav class="navbar navbar-light bg-light" style="float: left;">
   <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <input id="keyword" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button id="searchBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
 </nav>
 
-<div class="btn-group" style="float:initial;">
+{{!-- <div class="btn-group" style="float:initial;">
   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
     aria-expanded="false">
     Action
@@ -63,36 +63,78 @@
   </div>
 </div>
 
-<button type="button" class="btn btn-secondary" style="justify-content:center;">Secondary</button>
+<button type="button" class="btn btn-secondary" style="justify-content:center;">Secondary</button> --}}
+  <div class="btn-group" style="float: initial">
+      <button
+        type="button"
+        class="btn btn-primary dropdown-toggle"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Difficulty
+      </button>
+      <div class="dropdown-menu" id="difChoices">
+        <input type="checkbox" id="dif-beginner" value="Beginner" />
+        <label class="form-check-label" for="dif-beginner"> Beginner </label
+        ><br />
+        <input type="checkbox" id="dif-intermediate" value="Intermediate" />
+        <label class="form-check-label" for="dif-intermediate">
+          Intermediate </label
+        ><br />
+        <input type="checkbox" id="dif-advanced" value="Advanced" />
+        <label class="form-check-label" for="dif-advanced"> Advanced </label>
+      </div>
+    </div>
 
 <br><br><br><br><br><br><br><br><br>
 
 <div class="container">
   <div class="row">
-    <div class="col-md-6 container">
-      <div class="row" style="border: 2px solid black; height: 400px;">
+    <div class="col-md-6">
+      <div style="border: 2px solid black; height: 400px;">
         BOX 1 AT BOTTOM
         <div>
-        {{#each data}}
-        <li>{{this.engName}}</li>
-        <li>{{this.sanName}}</li>
-        <li>{{this.category}}</li>
-        <li>{{this.translation}}</li>
-        <li>{{this.difficulty}}</li>
-        <li>{{this.description}}</li>
-        <li>{{this.benefits}}</li>
-        <li>{{this.altName}}</li>
-        <li>{{this.imgURL}}</li>
-        </div>
-        <img src={{this.imgURL}} height=200 width=200 />
+          {{#each data}}
+          <ul>
+              <li>{{this.engName}}</li>
+              <li>{{this.sanName}}</li>
+              <li>{{this.category}}</li>
+              <li>{{this.translation}}</li>
+              <li>{{this.difficulty}}</li>
+              <li>{{this.description}}</li>
+              <li>{{this.benefits}}</li>
+              <li>{{this.altName}}</li>
+              <li>{{this.imgURL}}</li>
+           </ul>
+          </div>
+        <img src={{this.imgURL}} height="200" width="200" alt={{this.altName}} />
         {{/each}}
 
       </div>
 
     </div>
-    <div class="col-md-6 container">
+    <div class="col-md-6">
       <div style="border: 2px solid black; height: 400px; ">
-        BOX 2 AT BOTTOM </div>
+        BOX 2 AT BOTTOM 
+           <div>
+            {{#each data}}
+            <ul>
+                <li>{{this.engName}}</li>
+                <li>{{this.sanName}}</li>
+                <li>{{this.category}}</li>
+                <li>{{this.translation}}</li>
+                <li>{{this.difficulty}}</li>
+                <li>{{this.description}}</li>
+                <li>{{this.benefits}}</li>
+                <li>{{this.altName}}</li>
+                <li>{{this.imgURL}}</li>
+         </ul>
+        </div>
+        <img src={{this.imgURL}} height="200" width="200" alt={{this.altName}} />
+        {{/each}}
+
+      </div>
     </div>
   </div>
 </div>
