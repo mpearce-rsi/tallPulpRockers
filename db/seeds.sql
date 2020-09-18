@@ -36,7 +36,7 @@ CREATE TABLE `pose` (
   `difficulty` text,
   `descriptions_0` text,
   `descriptions_1` text,
-  `descriptions/2` text,
+  `descriptions_2` text,
   `benefits` text,
   `alt_name` text,
   `translation_4` text,
