@@ -1,11 +1,11 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // Getting references to our form and inputs
   const loginForm = $("form.login");
   const emailInput = $("input#email-input");
   const passwordInput = $("input#password-input");
 
   // When the form is submitted, we validate there's an email and password entered
-  loginForm.on("submit", function(event) {
+  loginForm.on("submit", function (event) {
     event.preventDefault();
     const userData = {
       email: emailInput.val().trim(),
@@ -28,11 +28,24 @@ $(document).ready(function() {
       email: email,
       password: password
     })
-      .then(function() {
+      .then(function () {
         window.location.replace("/search");
         // If there's an error, log the error
       })
-      .catch(function(err) {
+      .catch(function (err) {
+        console.log(err);
+      });
+  }
+  function search(email, password) {
+    $.get("/api/search", {
+      posture: pose_name,
+      password: password
+    })
+      .then(function () {
+        res.render(data)
+        // If there's an error, log the error
+      })
+      .catch(function (err) {
         console.log(err);
       });
   }
