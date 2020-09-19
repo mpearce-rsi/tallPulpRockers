@@ -1,0 +1,21 @@
+<div class="row">
+    {{#each pose}}
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-6">
+                {{!-- text --}}
+                <ul>
+                    <li>English: {{pose.pose_name}}</li>
+                    <li>Sanskrit{{pose.sanskrit_name}}</li>
+                    <li>Type: {{pose.category}}</li>
+                    <li>Difficulty: {{pose.difficulty}}</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                {{!-- image --}}
+                <img src="{{pose.url}}" class="img-fluid" alt="{{pose.pose_name}} image">
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
