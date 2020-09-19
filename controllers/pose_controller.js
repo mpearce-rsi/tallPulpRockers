@@ -47,10 +47,6 @@ app.get('/poses/:id', function (req, res) {
 });
 
 app.get('/search', function() {
+  
 });
 
-
-
-app.get('/members', function(){
-  res.render("members")
-})
