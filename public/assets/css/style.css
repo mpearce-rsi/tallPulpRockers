@@ -2,6 +2,46 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
-body{
-  background-color: aqua;
+#page{
+background-image: url(https://static1.squarespace.com/static/58ffef07c534a5a340384c55/t/5cf6a4c19c63b000015fa8e7/1560882529753/The+Benefits+of+Yoga+-+The+Benefits+of+Meditation+-+Titusville+Yoga+Loft+at+The+Titusville+Yoga+Loft+Downtown+Titusville+Yoga+Studio%2C+Yoga+For+Beginners%2C+Hatha+Yoga%2C+Vinyasa+Yoga%2C+Ashtanga+Yoga%2C+Yin+Yoga%2C+Kids+Yoga%2C+Meditation%2C+Barre%2C+Titusville+Yoga+in+the+Park.jpeg?format=1500w);
+margin: 0%;
+}
+
+.title{
+  font-size: 75px;
+  color: yellow;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-group{
+  margin-left: auto;
+}
+
+.pic{
+  margin-top: -48px;
+  margin-bottom: -48px;
+  width: 100%;
+  height: 400px;
+  z-index: -1;
+}
+
+#main{
+  object-fit: fill;
+}
+
+.navbar {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 25px;
+  width: 100%;
+  z-index: 100;
+}
+
+#log{
+  margin-top: -27px;
 }

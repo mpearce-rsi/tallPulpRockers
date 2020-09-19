@@ -21,10 +21,10 @@ USE `asana_db`;
 -- Table structure for table `pose`
 --
 
-DROP TABLE IF EXISTS `pose`;
+DROP TABLE IF EXISTS `Pose`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `pose` (
+CREATE TABLE `Pose` (
   `pose_name` text,
   `sanskrit_name` text,
   `url` text,
@@ -36,7 +36,7 @@ CREATE TABLE `pose` (
   `difficulty` text,
   `descriptions_0` text,
   `descriptions_1` text,
-  `descriptions/2` text,
+  `descriptions_2` text,
   `benefits` text,
   `alt_name` text,
   `translation_4` text,
@@ -53,7 +53,7 @@ CREATE TABLE `pose` (
 
 LOCK TABLES `pose` WRITE;
 /*!40000 ALTER TABLE `pose` DISABLE KEYS */;
-INSERT INTO poses (pose_name,sanskrit_name,url,translation_0,translation_1,translation_2,translation_3,category,difficulty,description_0,description_1,description_2,benefits,alt_name,translation_4,translation_5,translation_6,description_3,description_4)
+INSERT INTO Poses (pose_name,sanskrit_name,url,translation_0,translation_1,translation_2,translation_3,category,difficulty,description_0,description_1,description_2,benefits,alt_name,translation_4,translation_5,translation_6,description_3,description_4)
  VALUES ('Revolved Bird of Paradise Pose','Parivṛtta Svarga Dvijāsana','https://i.pinimg.com/originals/e0/ab/0a/e0ab0a23283dcf2ab8c7d2b2145cabfd.jpg','parivṛtta = revolved','svarga = heaven','dvija = twice born','āsana = posture','Standing / Balancing','Expert','From ','chair_twist.html',' pose, the lower arm reaches back around the legs as the upper arm wraps around the back and the fingers of the respective hands eventually meet and interlace.  One foot stays rooted into the earth and straightens while the opposite leg comes up with a bent knee.  Once you are standing upright extend the leg towards the sky.  The ribcage is lifted and the heart is open in the full expression of the pose.  The gaze is forward.','Increases the flexibility of the spine and back and stretches the shoulders.  Strengthens the legs.  Increases flexibility of the hip and knee joints.  Improves balance.  Opens the groin.  Stretches the hamstrings.','','','','','',''),
 ('Happy Baby Pose','Ānanda Bālāsana','https://i.pinimg.com/originals/6a/24/7f/6a247f00cac1f1901ee994c9415660f0.jpg','ānanda = happy','bāla = child','āsana = posture','','Supine / Balancing','Beginner','From a supine position, on your back, the knees are bent slightly wider than the hips.  The ankles and shins track the knees in a 90 degree angle perpendicular to the earth.  The hands grip the inside sole of the flexed feet (if you have difficultly holding the feet loop a strap over each sole) and push the knees down, coaxing the thighs in toward the torso, lengthening the spine, releasing the tail bone towards the earth and extending the base of the skull away from the back of the neck.  The gaze is up towards the sky.','','','Gently stretches the inner groins and the back spine.  Calms the brain and helps relieve stress and fatigue.','Blissful Baby / Dead Bug','','','','',''),
 ('Boat Pose','Nāvāsana','https://magazineclonerepub.blob.core.windows.net/mcepub/533/163516/image/0140abc4-6391-4a4a-b055-7f9ced801299.jpg','nāva = boat','āsana = posture','','','Seated / Balancing','Intermediate','From a seated position the feet are lifted up so that the thighs are angled about 45-50 degrees relative to the earth.  The tailbone is lengthened into the earth and the pubis pulls toward the navel.  The shoulder blades are spread across the back and the hands reach around the back of the calves, with legs pulled towards the body.  The chin is tipped slightly toward the sternum so that the base of the skull lifts lightly away from the back of the neck.  Gaze is forward.','','','Strengthens the abdomen, hip flexors, and spine.  Stimulates the kidneys, thyroid and prostate glands, and intestines.  Helps relieve stress.  Improves digestion.','','','','','',''),
@@ -188,16 +188,5 @@ INSERT INTO poses (pose_name,sanskrit_name,url,translation_0,translation_1,trans
 ('One Legged Wheel Pose','Eka Pāda Ūrdhva Dhanurāsana','https://previews.123rf.com/images/fizkes/fizkes1710/fizkes171000624/87651201-young-attractive-woman-practicing-yoga-stretching-in-bridge-exercise-one-legged-wheel-pose-working-o.jpg','eka = one','pāda = foot or leg','ūrdhva = upward','dhanu = bow','Arm and Leg Support / Balancing','Expert','From ','wheel.html',', extend one leg straight up to the sky with active toes.  The gaze is forward.','Strengthens the arms, wrists, legs, buttocks, abs, and spine.  Stimulates the thyroid and pituitary.  Increases energy and counteracts depression.  Therapeutic for asthma, back pain, infertility, and osteoporosis.','One Legged Upward Bow','āsana = posture','','','',''),
 ('Wild Thing Pose','Camatkārāsana','https://marketing.gaia.com/wp-content/uploads/WildThing_NicoLuce-768x432.jpg','camatkāra = struck with wonder','āsana = posture','','','Arm and Leg Support / Backbend','Intermediate','From ','downward_dog.html',' pose, elevate one leg toward the sky and stack the corresponding hip over the other hip.  Bring the upper heel as close to the buttocks as possible.  The hips remain stacked; then bring the shoulders forward slowly over the hands.  Replace the corresponding hand to the upraised leg with the other hand and flip yourself over and extend the top hand forward.  The bottom foot is now facing toward the front of the mat and you remain on the ball of the top foot and the corresponding knee is bent.  Continue to lift hips up towards the sky and continue reaching the free hand towards the front of the room and slightly downwards.  Allow the head to curl back.','Stretches the chest, shoulders, back, and throat.  Strengthens and opens the hips, hip flexors, and thighs.','','','','','',''),
 ('One Legged Wind Removing Pose','Eka Pāda Pavanamuktāsana','https://2.bp.blogspot.com/-mtREanMgRpM/TdpNx4IVAoI/AAAAAAAAAC0/gQINzudXok4/s1600/pavanamuktasana_1.gif','eka = one','pāda = foot or leg','pavana = wind','mukta = releasing','Supine / Forward Bend','Beginner','From a supine position lying on your back, pull one knee into the chest with the hands clasped around the bent knee to the level of pressure desired (gas trapped in the large intestine may be released in this asana).  The other leg is extended straight and the gaze is natural and forward.','','','Releases gas trapped in large intestine.  Stretches the cervical spine (neck).  Improves the digestion system.  Aides in elimination.','','āsana = posture','','','','');
-/*!40000 ALTER TABLE `pose` ENABLE KEYS */;
+/*!40000 ALTER TABLE `Pose` ENABLE KEYS */;
 UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2020-09-12 14:18:14
