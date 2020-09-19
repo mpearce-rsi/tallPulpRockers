@@ -1,6 +1,36 @@
 # tallPulpRockers
-Frank was here
 # Project Two
+
+## User Story
+Hate going to the gym? Or taking a workout class? Exciting news, you no longer need those! Our App will help you workout at anytime and anywhere!
+By utilizing this App, you can select one of the following levels of yoga plans, Beginner, Intermediate, or Advanced. Each plan contains information on the yoga positions, images and description. The plans are available both in English and Sanskrit.
+
+## Instructions
+The intend of this App is to provide different yoga plans that are available for customers to select from. To be able to utilize the programs offered in the App, they need to register, if they are not registered. Once registered, customers, can select one of the following levels of yoga plans, Beginner, Intermediate, or Advanced. Each plan contains information on the yoga positions, images and description. The plans are available both in English and Sanskrit.
+
+## image
+![github.com/kerishma] ()
+
+## Built With
+- HTML
+- CSS
+- Jquery
+- JavaScript 
+- Bootstrap
+- Bcryptjs
+- Express
+- MySql
+- Passport
+- Sequelize
+
+## Deployed App Link for Heroku
+
+## Deployed App link For Github 
+
+
+## gif Demo
+![Burger Demo](demo/)
+
 
 ## Coding Requirements
 Must have a folder structure that meets the MVC paradigm
@@ -14,33 +44,13 @@ Must be backed by a MySQL database with a Sequelize ORM
 Must protect API keys in Node with environment variables
 Must meet good-quality coding standards  (indentation, scoping, naming, etc.)
 
-## Not Required, But Nice to Have
-Incorporate authentication (JSON Web Tokens, sessions, etc.)
-Use an existing public dataset to power the database
-Create a migration strategy for sharing data across team members, e.g., a seed/schema.sql file
 
-
-## Presentation Requirements
-
-Your formal, 10-minute presentation must include:
-Your application’s overall concept
-The motivation for your application’s development
-Your design process
-Technologies used (and a brief description of how they work)
-A demonstration of the application’s functionality
-Directions for future development
-Sometimes, talking intelligently about tech > doing tech.
-
-## Metrics
-Project 2 will be assessed on the following:
-
-| Metric        | Weight | 
-| ---           | ---    |
-| Concept       | 10%    |
-| Design        | 20%    |
-| Functionality | 30%    |
-| Collaboration | 30%    |
-| Presentation  | 10%    |
+## Owners
+By: Anthony B
+Math Pearce
+Frank Carr
+Kevin Clark
+Kerishma Tarin
 
 
 ## Submission on BCS
