@@ -63,7 +63,8 @@ module.exports = function (app) {
       console.log('REULTS: ', results);
       const dbPoses = results.map((pose) => pose.dataValues);
       console.log(dbPoses);
-      res.render('search', { pose: dbPoses });
+      // res.json(dbPoses);
+      res.render('result', { data: dbPoses, layout:false });
     });
   });
 };

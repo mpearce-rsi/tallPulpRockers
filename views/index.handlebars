@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav id="log" class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="/logout"> Logout </a>
@@ -7,19 +7,19 @@
 </nav>
 
 
-<div class="jumbotron text-center bg-danger" style="height: 50vh;">
-  <div id="maincontainer" class="container">
-
-    <h1> yo yoga </h1>
+<div class="jumbotron">
+    <img class="pic" src="https://us.123rf.com/450wm/titonz/titonz1502/titonz150200124/36660229-panoramic-cloudscape-high-resolution-blue-sky-background-the-sun-breaking-through-white-clouds.jpg?ver=6">
+  <div class="container" id="main">
+  <div class="title">Yo Yo Yoga</div>
   </div>
 </div>
 
-<nav class="navbar navbar-light bg-light" style="float: left;">
+<nav class="navbar navbar-light bg-light"  style="float: left;">
   <form class="form-inline">
     <input id="keyword" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button id="searchBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
-</nav>
+  {{!-- </form>
+</nav> --}}
 
 {{!-- <div class="btn-group" style="float:initial;">
   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
@@ -87,58 +87,42 @@
       </div>
     </div>
 
-<br><br><br><br><br><br><br><br><br>
+{{!-- <button type="button" class="btn btn-secondary" style="justify-content:center; ">Secondary</button> --}}
+  </form>
+</nav>
 
-<div class="container">
+ <div class="container">
   <div class="row">
     <div class="col-md-6">
-      <div style="border: 2px solid black; height: 400px;">
-        BOX 1 AT BOTTOM
-        <div>
-          {{#each data}}
-          <ul>
-              <li>{{this.engName}}</li>
-              <li>{{this.sanName}}</li>
-              <li>{{this.category}}</li>
-              <li>{{this.translation}}</li>
-              <li>{{this.difficulty}}</li>
-              <li>{{this.description}}</li>
-              <li>{{this.benefits}}</li>
-              <li>{{this.altName}}</li>
-              <li>{{this.imgURL}}</li>
-           </ul>
-          </div>
-        <img src={{this.imgURL}} height="200" width="200" alt={{this.altName}} />
-        {{/each}}
+      <div id = "pose" ></div>
+      {{!-- style="border: 2px solid black; height: 400px;"> --}}
+        {{!-- BOX 1 AT BOTTOM --}}
 
-      </div>
-
-    </div>
-    <div class="col-md-6">
-      <div style="border: 2px solid black; height: 400px; ">
-        BOX 2 AT BOTTOM 
-           <div>
-            {{#each data}}
-            <ul>
-                <li>{{this.engName}}</li>
-                <li>{{this.sanName}}</li>
-                <li>{{this.category}}</li>
-                <li>{{this.translation}}</li>
-                <li>{{this.difficulty}}</li>
-                <li>{{this.description}}</li>
-                <li>{{this.benefits}}</li>
-                <li>{{this.altName}}</li>
-                <li>{{this.imgURL}}</li>
-         </ul>
+          {{!-- {{#each data}}
+          <div>
+          <li>{{pose_name}}</li>
+          <li>{{sanskrit_name}}</li>
+          <li>{{category}}</li>
+          <li>{{translation_0}}</li>
+          <li>{{difficulty}}</li>
+          <li>{{description_0}}</li>
+          <li>{{benefits}}</li>
+          <li>{{alt_name}}</li>
+          <li>{{translation_1}}</li>
+          <img src={{url}} height=200 width=200 />
         </div>
-        <img src={{this.imgURL}} height="200" width="200" alt={{this.altName}} />
+        {{!-- <img src={{dataValues.url}} height=200 width=200 />
+        
         {{/each}}
-
+      </div> - --}}
       </div>
+      </div>
+      {{!-- {{> result}} --}}
     </div>
+    {{!-- <div class="col-md-6">
+      <div class"row" style="border: 2px solid black; height: 400px; ">
+        BOX 2 AT BOTTOM
+      </div>
+    </div> --}}
   </div>
-</div>
-
-</div>
-
 </div>
